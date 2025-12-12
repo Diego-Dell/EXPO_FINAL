@@ -3,7 +3,8 @@ import { Routes } from '@angular/router';
 import { LayoutAdminComponent } from './layout-admin/layout-admin';
 import { PanelAdminComponent } from './panel-admin/panel-admin';
 import { GestionLaptopsComponent } from './gestion-laptops/gestion-laptops';
-import { SalirDePaginaGuard } from '../guards/salir-de-pagina.guard';
+
+import { SalirGuard } from '../guards/salir-guard';
 
 export const adminRoutes: Routes = [
   {
@@ -15,7 +16,7 @@ export const adminRoutes: Routes = [
       {
         path: 'laptops',
         component: GestionLaptopsComponent,
-        canDeactivate: [SalirDePaginaGuard]   // aquí aplicamos el CanDeactivate
+        canDeactivate: [SalirGuard]
       }
     ]
   }

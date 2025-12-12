@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-carrito',
-  imports: [],
+  standalone: true,
   templateUrl: './carrito.html',
   styleUrl: './carrito.css',
 })
-export class Carrito {
-
-}
+export class CarritoComponent { }

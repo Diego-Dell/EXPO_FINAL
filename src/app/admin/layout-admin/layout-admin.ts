@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-layout-admin',
-  imports: [],
+  standalone: true,
+  imports: [RouterModule],
   templateUrl: './layout-admin.html',
   styleUrl: './layout-admin.css',
 })
-export class LayoutAdmin {
-
-}
+export class LayoutAdminComponent { }

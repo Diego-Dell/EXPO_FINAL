@@ -1,1 +1,17 @@
-<p>detalle-laptop works!</p>
+<div *ngIf="laptop; else noEncontrada">
+  <h2>{{ laptop.marca }} {{ laptop.modelo }}</h2>
+
+  <img [src]="laptop.imagen" width="320" />
+  <p>{{ laptop.procesador }}</p>
+  <p>RAM: {{ laptop.ram }}</p>
+  <p>Almacenamiento: {{ laptop.almacenamiento }}</p>
+
+  <h3>Precio: {{ laptop.precio }} USD</h3>
+
+  <a routerLink="/laptops">Volver al catálogo</a>
+</div>
+
+<ng-template #noEncontrada>
+  <h2>Laptop no encontrada</h2>
+  <a routerLink="/laptops">Volver</a>
+</ng-template>

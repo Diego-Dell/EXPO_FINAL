@@ -1,1 +1,16 @@
-<p>gestion-laptops works!</p>
+<h2>Gestión de Laptops</h2>
+
+<table border="1" cellpadding="6">
+  <tr>
+    <th>ID</th>
+    <th>Marca</th>
+    <th>Modelo</th>
+    <th>Precio</th>
+  </tr>
+  <tr *ngFor="let l of laptops">
+    <td>{{ l.id }}</td>
+    <td>{{ l.marca }}</td>
+    <td>{{ l.modelo }}</td>
+    <td>{{ l.precio }} USD</td>
+  </tr>
+</table>

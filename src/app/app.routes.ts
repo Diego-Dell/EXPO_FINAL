@@ -1,9 +1,11 @@
 import { Routes } from '@angular/router';
 
+// PÁGINAS DEL E-COMMERCE
 import { ListaLaptopsComponent } from './paginas/lista-laptops/lista-laptops';
 import { DetalleLaptopComponent } from './paginas/detalle-laptop/detalle-laptop';
 import { CarritoComponent } from './paginas/carrito/carrito';
 
+// ADMIN
 import { LayoutAdminComponent } from './admin/layout-admin/layout-admin';
 import { PanelAdminComponent } from './admin/panel-admin/panel-admin';
 import { GestionLaptopsComponent } from './admin/gestion-laptops/gestion-laptops';

@@ -1,1 +1,13 @@
-<p>lista-laptops works!</p>
+<h2>Catálogo de Laptops</h2>
+
+<div class="grid">
+  <div class="item" *ngFor="let laptop of laptops">
+    <img [src]="laptop.imagen" alt="laptop" />
+    <h3>{{ laptop.marca }} {{ laptop.modelo }}</h3>
+    <p>{{ laptop.procesador }}</p>
+    <p>RAM: {{ laptop.ram }} | SSD: {{ laptop.almacenamiento }}</p>
+    <strong>{{ laptop.precio }} USD</strong>
+    <br /><br />
+    <a [routerLink]="['/laptop', laptop.id]">Ver detalle</a>
+  </div>
+</div>

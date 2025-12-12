@@ -7,7 +7,7 @@ import { CanActivate, Router } from '@angular/router';
 export class AuthGuard implements CanActivate {
 
   // cambia a true/false para permitir o bloquear
-  private estaLogueado = true;
+  private estaLogueado = false;
 
   constructor(private router: Router) {}
 
